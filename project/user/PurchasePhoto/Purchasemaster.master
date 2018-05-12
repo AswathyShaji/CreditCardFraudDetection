@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Purchasemaster.master.cs" Inherits="User_PurchasePhoto_Purchasemaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>CreditCardFraudDetection</title>
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        function noBack() {
+            window.history.forward()
+        }
+        noBack();
+        window.onload = noBack;
+        window.onpageshow = function (evt) { if (evt.persisted) noBack() }
+        window.onunload = function () { void (0) }
+</script>
+    <style type="text/css">
+        .auto-style1 {
+            width: 96%;
+        }
+        .auto-style2 {
+            height: 21px;
+        }
+        .auto-style4 {
+            height: 21px;
+            width: 183px;
+        }
+        .auto-style5 {
+            width: 183px;
+        }
+        .auto-style6 {
+            width: 762px;
+        }
+        .auto-style7 {
+            height: 21px;
+            width: 762px;
+        }
+        .auto-style8 {
+            height: 21px;
+            width: 26px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+   <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1 style="font-family: 'times New Roman', Times, serif; text-transform: capitalize; color: #FFFFFF">
+                 Credit Card Fraud Detection
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                   
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="Logout.aspx" />
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" OnMenuItemClick="NavigationMenu_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/user/userhome.aspx" Text="Home">
+                        </asp:MenuItem>
+                        
+                        <asp:MenuItem NavigateUrl="~/user/PurchasePhoto/PurchaseReport.aspx" Text="Report" Value="Report"></asp:MenuItem>
+                        
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4" style="vertical-align:top;">
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style8">
+                            <img height="23" src="Cart_Icons/gift.jpg" width="26" /></td>
+                        <td>
+                            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Items</asp:LinkButton>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style8">
+                            <img height="23px" src="Cart_Icons/1392058654_shoping_cart.png" width="25px" /></td>
+                        <td>
+                            <asp:LinkButton ID="LinkButton2" runat="server" ToolTip="View Cart" OnClick="LinkButton2_Click">Cart</asp:LinkButton>
+                                (<asp:Label ID="lblCount" runat="server" style="font-weight: 700"></asp:Label>
+                                )</td>
+                    </tr>
+                </table>
+                    </td>
+                    <td class="auto-style7" style="font-weight: 700;vertical-align:top;"  >
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                  
+        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
+                </tr>
+            </table>
+           </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

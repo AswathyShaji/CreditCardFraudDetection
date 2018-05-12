@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="bankmasterPage.master.cs" Inherits="bank_bankmasterPage" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>CreditCardFraudDetection.in</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+<asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        function noBack() {
+            window.history.forward()
+        }
+        noBack();
+        window.onload = noBack;
+        window.onpageshow = function (evt) { if (evt.persisted) noBack() }
+        window.onunload = function () { void (0) }
+</script>
+   
+</head>
+    
+<body>
+
+
+
+
+    <form id="form1" runat="server">
+        <div id="header">
+	<div id="logo">
+		<h1><a href="#" style="font-family: 'times New Roman', Times, serif; text-transform: capitalize; color: #000000">CreditCardFraudDetection</a></h1>
+		<%--<h2>User Section</h2>--%>
+	</div>
+	<div id="menu">
+		<ul>
+			 <li class="active"><a href="bankhome.aspx" accesskey="1" title="" style="font-family: 'times New Roman', Times, serif; text-transform: capitalize; color: #000000">Home</a></li>
+            <%--<li class="active"><a href="UserChangePassword.aspx" accesskey="1" title="" style="font-family: 'times New Roman', Times, serif; text-transform: capitalize; color: #000000">ChangePassword</a></li>--%>
+            <li class="active"><a href="Logout.aspx" accesskey="1" title="" style="font-family: 'times New Roman', Times, serif; text-transform: capitalize; color: #000000">LogOut</a></li>
+		</ul>
+	</div>
+</div>
+<hr />
+<div id="page">
+	<div id="bg">
+		<div id="content">   
+            <div class="post" style="padding-top: 57px; height: 139px;">
+				<h2 class="title"></h2>
+				<h3 class="date"></h3>
+				<div class="entry">
+                    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   </div>
+				
+			</div>    
+		</div>
+                    
+      
+		<!-- end contentn -->
+		<div id="sidebar">
+			<div id="about-box">
+				<h2>About the Company</h2>
+				<p>Our business brings a disciplined,strategic approach to trading </p>
+			</div>
+			<ul>
+				<li>
+					<%--<h2>Categories</h2>--%>
+					<ul>
+						<%--<li class="first"><a href="UserViewProfile.aspx">My Profile</a></li>
+						<li><a href="EditUserProfile.aspx">Edit Profile</a></li>
+						<li><a href="ViewProduct.aspx">Purchase</a></li>--%>
+                       
+						<%--<li><a href="School-Pending.aspx">NewSchool</a></li>--%>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<%--<li class="first"><a href="School-Approved.aspx">ApprovedShool</a></li>
+						<li><a href="School-Rejected.aspx">RejectedSchool</a></li>
+                        <li><a href="User-List.aspx">UserList</a></li>
+						<li><a href="Designation.aspx">Designation</a></li>
+                        <li><a href="DieseaseType.aspx">DieseaseType</a></li>
+                         <li><a href="AcademicYear.aspx">AcademicYear</a></li>--%>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- end sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+</div>
+<!-- end page -->
+<hr />
+<div id="footer">
+</div>
+
+    </form>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &copy;2016 CreditCardFraudDetection. All rights reserved|Team Amecan</p>
+</body>
+</html>
+

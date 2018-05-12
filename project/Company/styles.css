@@ -1,0 +1,280 @@
+/*
+Design by Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+*
+{
+
+    margin: 0 0 0 0px;
+}
+
+img
+{
+border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+   
+}
+
+
+.tit_bot a{
+	text-decoration:none;
+	color:#000000;
+}
+
+.tit_bot a:hover{
+	text-decoration: underline;
+}
+
+
+body{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #000000;
+	line-height:20px;
+	background:url(images/bg.jpg) top repeat-x #000000;
+	}
+
+
+#main{
+	width: 1014px;
+	margin: 0px auto;
+	padding: 0px 15px 0px 15px;
+	background: url(images/main_bg.png) repeat-y ;
+}
+
+#bot_lf {
+background:url(images/bot_lf.jpg) left bottom no-repeat;}
+
+#top_lf {background:url(images/top_lf.jpg) right top no-repeat;
+}
+
+
+#header { width:1014px;
+padding: 0px 0px 0px 0px;
+height: 133px;
+}
+
+#buttons{
+	width: 102px;
+	background: url(images/menu.jpg) left top repeat-x;
+	text-align:center;
+	height:43px;
+	margin-right:0px;
+	padding-left:12px;
+	float: left;
+}
+
+
+#buttons a {
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	display: block;
+	float: left;
+	width: 102px;
+	height: 30px;
+	text-decoration: none;
+	color: #FFFFFF;
+	padding-top: 7px;
+	text-align: center;
+	margin-right: 0px;
+	background: url(images/but.jpg) left top no-repeat;
+}
+
+#buttons a:hover {
+	text-decoration: none;
+	background: url(images/but_ov.jpg) left top no-repeat;
+	color:#FFFFFF;
+}
+
+#logo{
+	background: url(images/logo.jpg) center top no-repeat;
+	padding: 48px 0px 0px 135px;
+}
+
+#logo a {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+	font-size: 18px;
+	color: #762121;
+	font-weight: 100;
+	font-style:italic;
+	font-weight:bold;
+}
+
+
+#logo H3 a{
+	font-size: 12px;
+	background:none;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	font-weight:bold;
+	color: #762121;
+}
+
+#content{
+	width: 1014px;
+	padding: 2px 0px 0px 0px;
+}
+
+#left{
+	width: 620px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 10px;
+	float:left;
+	background: url(images/left.jpg) top repeat-x;
+	min-height: 590px;
+}
+
+#left_top { background: url(images/left_top.png) left top no-repeat;
+height: 8px;}
+#left_bot {background:url(images/left_bot.png) left bottom no-repeat;
+height: 7px;}
+#left_mid {padding: 0px 13px 0px 11px;
+border: 1px solid;
+width: 850px;
+background-color: white;}
+
+#right .list 
+{
+	list-style: none;
+	padding-left: 32px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	margin: 0px;
+	display:block;
+	background: url(images/fish.gif) 1px 9px no-repeat;
+}
+
+.tit_bot {	background: url(images/tit_bot.png) center top no-repeat;
+			padding: 10px 0px 0px 0px;
+}
+
+.text{
+	padding: 10px 0px 0px 0px;
+}
+
+.img {	float:left;
+		margin: 2px 17px 5px 0px;
+}
+
+.gal { padding: 15px 0px 0px 15px;
+height: 100px;}
+.img_gal {
+	width: 122px;
+	text-align: center;
+	margin-right: 26px;
+	float: left;}
+.gal a  {
+	color: #530202;
+	font-weight:bold;
+	border-bottom: 1px dotted #530202;
+	text-decoration:none;
+	padding-top: 4px;
+	height: 30px;}
+.img_g {
+	padding-bottom: 4px;}
+.img_gal_last {
+	width: 122px;
+	text-align: center;
+	float: left;}
+
+
+.img_t {	float:left;
+		margin: 0px 10px 0px 0px;
+}
+
+span {	color:#700307;
+		font-weight:bold;
+}
+
+.color { color:#3774A0;}
+
+.dat { text-decoration:underline;}
+
+#right H1{
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:normal;
+	color: #892825;
+	padding-bottom: 10px;
+	padding-left: 2px;
+	padding-top: 10px;
+	text-align:left;
+	background: url(images/tit.gif) bottom repeat-x;
+}
+
+#left H2{
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:normal;
+	color: #892825;
+	padding-bottom: 10px;
+	padding-left: 2px;
+	padding-top: 10px;
+	text-align:left;
+	background: url(images/tit.gif) bottom repeat-x;
+}
+
+.read{
+	text-align:right;
+	padding-right:5px;
+	padding-top: 15px;
+}
+
+.read_r{
+	text-align:right;
+	padding-right:5px;
+	padding-top: 8px;
+}
+
+#right{
+	float:right;
+	width: 242px;
+	margin-right: 3px;
+	background: url(images/right.jpg) top repeat-x;
+	padding-top: 263px;
+	margin-right: 13px;
+}
+
+
+
+#right ul 
+{
+	list-style: none;
+	padding-left:0px;
+	padding-top:0px;
+	margin: 0px;
+	display:block;
+	padding-bottom: 0px;
+}
+
+#right li{
+	padding-top: 5px;
+	background: url(images/fish1.gif) 10px 12px no-repeat;
+	padding-left: 38px;
+}
+
+#footer{
+	height: 79px;
+	width: 490px;
+	font-size: 12px;
+	color: #000000;
+	text-align: center;
+	clear:both;
+	padding: 75px 0px 0px 524px;
+}
+
+#footer a{
+	color: #000000;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#footer a:hover{
+	color: #000000;
+	font-size: 12px;
+	text-decoration: underline;
+}
